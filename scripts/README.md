@@ -40,3 +40,6 @@ ${findPod}
 #print cmd
 echo ${findPod}
 ```
+
+5. read 命令
+[参考](https://wangdoc.com/bash/read.html)
