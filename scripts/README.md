@@ -43,3 +43,8 @@ echo ${findPod}
 
 5. read 命令
 [参考](https://wangdoc.com/bash/read.html)
+
+6. iptables
+```bash
+iptables -t filter -A INPUT -s 10.92.119.120 -dport 80 -j DROP
+```
