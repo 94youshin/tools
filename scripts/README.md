@@ -48,3 +48,5 @@ echo ${findPod}
 ```bash
 iptables -t filter -A INPUT -s 10.92.119.120 -dport 80 -j DROP
 ```
+7. dequote
+去除入参引号
