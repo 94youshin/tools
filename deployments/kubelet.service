@@ -1,0 +1,22 @@
+[Unit]
+Description=Kubernetes Scheduler Service
+After=syslog.target network.target
+ 
+[Service]
+Type=notify
+ExecStart=/home/gocode/src/k8s.io/kubernetes/_output/bin/kubelet \
+	--bootstrap-kubeconfig=/etc/kubernetes/bootstrap-kubelet.conf \
+	--kubeconfig=/etc/kubernetes/kubelet.conf \
+	--config=/var/lib/kubelet/config.yaml \
+	--network-plugin=cni \
+	--pod-infra-container-image=k8s.gcr.io/pause:3.6
+
+ExecReload=/bin/kill -s HUP $MAINPID
+
+Environment=
+TimeoutSec=0
+RestartSec=2
+Restart=always
+ 
+[Install]
+WantedBy=multi-user.target
