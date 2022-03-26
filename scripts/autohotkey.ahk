@@ -1,3 +1,8 @@
+;
+; windows start up
+; C:\Users\USERNAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup 
+; C:\ProgramData\Microsoft\Windows\Start Menu\Programs\Startup
+;
 #NoEnv  ; Recommended for performance and compatibility with future AutoHotkey releases.
 ; #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
