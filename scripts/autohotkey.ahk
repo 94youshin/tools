@@ -57,7 +57,7 @@ SendToClipBoard(t)
 #4::SendToClipBoard("2w#E4r%T^Y7uqwas")
 
 ; 打开文件夹
-+s::Run,D:\data\工作文档
+#s::Run,D:\data\工作文档
 
 ; 打开指定网页
-+g::Run,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe https://github.com
+#g::Run,C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe https://github.com
